@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <title>GEuBS Gestão de Saúde</title>
+
+    <link rel="stylesheet" href="reset.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<header>
+    <div class="caixa">
+        <h1><img class="logo" src="img/logo.png" alt="Logo da GEuBS Gestão de Saúde"></h1>
+        <div class="texto">
+            <span class="borda">Pesquisa para Gestores em Saúde</span>
+        </div>
+    </div>
+    <p id="descricao" class="descricao texto-centralizado">Obrigado por nos ajudar em nossa pesquisa isso irá melhorar
+        nossa gestão</p>
+</header>
+<main>
+    <div class="banner-container">
+        <img class="banner" src="img/banner.jpg" alt="Banner Pesquisa para Gestores em Saúde">
+    </div>
+    <form class="form-container">
+
+        <div class="form-group">
+            <label id="label-media-visitantes" for="media-visitantes">Quantas pessoas em média visitam a central de
+                regulação por dia?</label>
+            <input type="number" id="media-visitantes" name="media-visitantes" placeholder="média de visitantes"
+                min="0" class="form-control">
+        </div>
+
+        <div class="form-group">
+            <p>Você costuma ouvir críticas durante o atendimento?</p>
+            <label>
+                <input type="radio" name="critica-atendimento" value="sim" class="input-radio" checked>
+                Sim
+            </label>
+            <label>
+                <input type="radio" name="critica-atendimento" value="nao" class="input-radio">
+                Não
+            </label>
+        </div>
+
+        <div class="form-group">
+            <label id="label-critica-atendimento" for="critica-atendimento">Caso afirmativo qual a crítica mais
+                recorrente?</label>
+            <input type="text" id="critica-atendimento" name="sim-critica-atendimento"
+                placeholder="critica ao atendimento" class="form-control">
+        </div>
+
+        <div class="form-group">
+            <p>Como você avaliaria a velocidade do atendimento ao usuário?</p>
+            <select id="velocidade-atendimento" name="velocidade-atendimento" class="form-control">
+                <option disable selected value>Selecione a função atual</option>
+                <option value="otimo">Ótimo</option>
+                <option value="bom">Bom</option>
+                <option value="regular">Regular</option>
+                <option value="ruim">Ruim</option>
+                <option value="pessimo">Péssimo</option>
+            </select>
+        </div>
+
+        <div class="form-group">
+            <label id="label-numero-funcionarios" for="numero-funcionarios">Quantos funcionários trabalham
+                contigo?</label>
+            <input type="number" id="numero-funcionarios" name="numero-funcionarios" min="0"
+                placeholder="número de funcionários" class="form-control">
+        </div>
+
+        <div class="form-group">
+            <p>Você julga o tamanho da sua equipe suficiente para a demanda?</p>
+            <label>
+                <input type="radio" name="tamanho-equipe" value="sim" class="input-radio" checked>
+                Sim
+            </label>
+            <label>
+                <input type="radio" name="tamanho-equipe" value="nao" class="input-radio">
+                Não
+            </label>
+        </div>
+
+        <div class="form-group">
+            <p>Você consegue hoje determinar qual o exame ou especialidade mais buscado?</p>
+            <label>
+                <input type="radio" name="exame-especialidade" value="sim" class="input-radio" checked>
+                Sim
+            </label>
+            <label>
+                <input type="radio" name="exame-especialidade" value="nao" class="input-radio">
+                Não
+            </label>
+        </div>
+
+        <div class="form-group">
+            <p>Você consegue manter contato com os usuários para aviso de abertura de vagas?</p>
+            <label>
+                <input type="radio" name="contato-usuarios" value="sim" class="input-radio" checked>
+                Sim
+            </label>
+            <label>
+                <input type="radio" name="contato-usuarios" value="nao" class="input-radio">
+                Não
+            </label>
+        </div>
+
+        <div class="form-group">
+            <label id="label-sugestao-eficiente" for="sugestao-eficiente">Que sugestão você gostaria de dar para que
+                a
+                gestão de saúde pública fosse mais eficiente?</label>
+            <input type="text" id="sugestao-eficiente" name="sugestao-eficiente"
+                placeholder="sugestão gestão de saúde pública" class="form-control">
+        </div>
+
+        <div class="form-group">
+            <label id="label-necessidade-gestor" for="necessidade-gestor">Qual a sua maior necessidade hoje enquanto
+                gestor?</label>
+            <input type="text" id="necessidade-gestor" name="necessidade-gestor" placeholder="necessidade gestor" class="form-control">
+        </div>
+
+        <div class="form-group">
+            <p>Você sugeriria ao município que adquirisse um produto que facilitasse o acesso dos munícipes ao
+                serviço de
+                saúde?</p>
+            <label>
+                <input type="radio" name="servico-saude" value="sim" class="input-radio" checked>
+                Sim
+            </label>
+            <label>
+                <input type="radio" name="servico-saude" value="nao" class="input-radio">
+                Não
+            </label>
+        </div>
+
+        <div class="form-group">
+            <button type="submit" class="submit-button" id="enviar">Enviar</button>
+            </div>
+    </form>
+</main>
+<footer>
+    <img class="logo" src="img/logo-footer.png" alt="Logo da GEuBS gestão de saúde">
+    <p class="copyright">&copy; Copyright GEuBS Gestão de Saúde - 2021</p>
+</footer>
+
+</html>
